@@ -7,4 +7,4 @@ def random_predict(number):
         if number == predict_number:
             break
     return c
-print(random_predict(25))
+#print(random_predict(25))
