@@ -6,11 +6,11 @@ def game_2(number):
         c+=1
         predict=np.random.randint(low, high)
         if number==predict:
+            #print(f'final try {c}, pred {predict}, low {low}, high {high}')
             break
         elif number < predict:
-            high=predict#-1
+            high=predict
         elif number > predict:
-            low=predict#+1
-        #print(f'try {c}, res {predict}')
+            low=predict
+        #print(f'try {c}, pred {predict}, low {low}, high {high}')
     return c
-game_2(66)
