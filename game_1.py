@@ -11,4 +11,3 @@ def game_1(number):
         elif predict_number > number:
             predict_number -= 1
     return c
-# print(game_1(66))

@@ -10,7 +10,6 @@ def score_game(f):
     for i in random_array:
         count_ls.append(f(i))
     score = int(np.mean(count_ls))
-    # print(count_ls)
     print(f'алгоритм угадывает за {score} попыт.')
 
 
