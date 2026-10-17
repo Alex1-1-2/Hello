@@ -7,5 +7,9 @@ def score_game(f):
         count_ls.append(f(i))
     score=int(np.mean(count_ls))
     #print(count_ls)
-    print(score)
-score_game(game_0.random_predict)
+    print(f'алгоритм угадывает за {score} попыт.')
+
+print('проверка game_0: ', end='')
+{score_game(game_0.random_predict)}
+print('проверка game_1: ', end='')
+score_game(game_1.game_1)
